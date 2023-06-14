@@ -1,0 +1,178 @@
+body {
+  color: #bbb;
+  background: #161b22;
+  margin: 0 auto;
+  max-width: 40em;
+  padding: 0 1em;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.content
+{
+  height: auto;
+}
+
+.inner-content
+{
+  margin-left: 5%;
+  padding-bottom: 5%;
+}
+
+#predict
+{ 
+  padding: 10px 15px 10px 15px;
+  font-size: 16px;
+  margin-top: 4%;
+  border-radius: 5%;
+  background-color: #161b22;
+  color: #bbb;
+  border: 1.5px solid #bbb;
+  font-family: 'Roboto Mono', monospace;
+  font-style: italic;
+  transition-duration: 0.4s;
+}
+
+#predict:hover
+{
+  background-color: #bbb;
+  color: #161b22
+}
+
+.button
+{
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dupsko
+{
+  display: flex;
+  justify-content: center;
+}
+
+button
+{
+  padding: 10px 15px 10px 15px;
+  font-size: 16px;
+  border-radius: 5%;
+  background-color: #161b22;
+  color: #bbb;
+  border: 1.5px solid #bbb;
+  font-family: 'Roboto Mono', monospace;
+  font-style: italic;
+  transition-duration: 0.4s;
+  justify-self: center;
+}
+
+button:hover
+{
+  background-color: #bbb;
+  color: #161b22;
+  cursor: pointer;
+}
+
+
+#canvas
+{
+  background-color: #21262d;
+  border-radius: 3%;
+}
+
+.canv
+{
+  display: inline-block;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.25em 0 0.5em 0;
+  line-height: 1.25;
+}
+
+#header
+{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#sub-header
+{
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 5%;
+}
+
+#desc 
+{
+  margin-bottom: 5%;
+}
+
+#footer
+{
+  color: #89929b;
+  text-align: center;
+  line-height: 1.2rem;
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+a:link {
+  color: #FF5733;
+}
+a:visited {
+  color: #FF5733;
+}
+a:focus, a:hover {
+  color: #ff9a84;
+  text-decoration: underline;
+}
+a:active {
+  color: #f99;
+}
+
+#a-bttn
+{
+  color: #bbb;
+}
+
+#a-bttn:hover
+{
+  color: #161b22;
+  text-decoration: none;
+}
+
+.mobile-dev
+{
+  display: none;
+}
+
+@media(max-width:668px)
+{
+  .canv
+  {
+    display: none;
+  }
+  .results
+  {
+    display: none;
+  }
+  .mobile-dev
+  {
+    display: block;
+  }
+  #header
+  {
+    font-size: 25px;
+  }
+  #mob 
+  {
+    font-size: 32px;
+    color:#FF5733;
+  }
+}
