@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hand-written digits recognition</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+        <link rel="stylesheet" type="text/css" href="/static/style.css">
+        <script type="text/javascript" src="/static/draw.js"></script>
+    </head>
+    <body>
+        <div class="content">
+            <div class="inner-content">
+                <h1 id="header">hand-written digits recognition</h1>
+                <p id="sub-header">"hello world" of neural networks.</p>
+                <p id="desc">write a digit. trained neural network will try to recognize it.<br><i>model trained on MNIST dataset. sequential structure. convolutional and dense layers with adjustments lenet5 alike.</i><br>
+                <span style="color:#89929b">(not 100% accurate, trained on standard MNIST dataset only.)</span></p>
+                <div class="results">
+                    <h3 style="text-align:center;color:#FF5733;">Result: <span style="color:#bbb">Looks like a(n) </span>{{ prediction }}<span style="color:#bbb">!</span></h2>
+                    <br>
+                    <div class="dupsko"><button><a id="a-bttn" href="{{ url_for('index') }}">try again</a></button></div>
+                </div>
+                <div class="mobile-dev">
+                    <p id="mob"><i>this site is not designed for mobile devices :c larger screen, please!</i></p>
+                </div>
+                <p id="footer">detker, 2023<br><a href="https://github.com/detker" target="_blank">github.com/detker</a></p>
+            </div>
+        </div>
+    </body>
+</html>
